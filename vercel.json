@@ -2,13 +2,13 @@
     "version": 2,
     "builds": [
         {
-            "src": "./app.js",
+            "src": "./views/index.ejs",
             "use": "@vercel/node"
         }
     ],
     "routes": [
         {
-            "src": "/views(.*)",
+            "src": "/(.*)",
             "dest": "/"
         }
     ]
